@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBons.ai — See Yourself Clearly</title>
+  <meta name="description" content="A personal journaling app with AI-powered reflections and a growing bonsai garden. Journal your thoughts, grow your mind.">
+  <meta name="keywords" content="journaling, mental health, AI, bonsai, mindfulness, reflection, self-improvement">
+  <meta property="og:title" content="MyBons.ai — See Yourself Clearly">
+  <meta property="og:description" content="A personal journaling app with AI-powered reflections and a growing bonsai garden.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="assets/logo.png" alt="MyBons.ai logo">
+        MyBons.ai
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://apps.apple.com/app/mybonsai/id6758892243" class="nav-cta">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>See yourself <span>clearly.</span></h1>
+    <p>
+      A personal journal that uses AI to help you understand your own mind. 
+      Write freely, get meaningful reflections, and watch your bonsai garden grow with every entry.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://apps.apple.com/app/mybonsai/id6758892243" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on iOS
+      </a>
+      <a href="#shop" class="btn-secondary">
+        Shop Wristbands
+      </a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <h2>Your mind, your pace.</h2>
+    <p>Everything you need to journal with intention and grow.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Thoughtful Journaling</h3>
+        <p>Write freely with a clean, distraction-free editor. Attach photos and videos to capture the full picture.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💧</div>
+        <h3>AI Reflections</h3>
+        <p>"Water your thought" — get personalized AI reflections that help you see patterns and understand yourself deeper.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌲</div>
+        <h3>Bonsai Garden</h3>
+        <p>Every journal entry unlocks a new bonsai species. Watch your garden grow as a visual map of your journey.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔮</div>
+        <h3>Deep Insights</h3>
+        <p>Discover recurring themes, tensions, and breakthroughs across your entries with AI-powered pattern analysis.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Private & Secure</h3>
+        <p>Your thoughts are yours. Passcode-protected private entries, biometric unlock, and local-first storage.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">☁️</div>
+        <h3>Cloud Sync</h3>
+        <p>Sign in to sync your journal across all your devices. Your entries are encrypted in transit and at rest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop / Wristband -->
+  <section class="shop-section" id="shop">
+    <div class="shop-inner">
+      <h2>Wear your words.</h2>
+      <p>Choose a mantra that means something to you. We'll engrave it on a premium silicone wristband — a physical reminder of the mental work you're doing.</p>
+      
+      <div class="band-showcase">
+        <div class="band-visual">
+          <img src="assets/wristband-preview.png" alt="Bonsai wristband preview" style="max-width: 360px; border-radius: 16px;">
+          <div class="band-colors">
+            <div class="color-swatch active" style="background: #F5F5F0;" title="Bone"></div>
+            <div class="color-swatch" style="background: #1A1A1A;" title="Black"></div>
+            <div class="color-swatch" style="background: #E8DFD0;" title="Sand"></div>
+            <div class="color-swatch" style="background: #C8D5C8;" title="Sage"></div>
+            <div class="color-swatch" style="background: #E8D5D5;" title="Blush"></div>
+            <div class="color-swatch" style="background: #D5E0E8;" title="Sky"></div>
+            <div class="color-swatch" style="background: #DDD5E8;" title="Lavender"></div>
+            <div class="color-swatch" style="background: #D4C4B0;" title="Clay"></div>
+          </div>
+        </div>
+        <div class="band-info">
+          <h3>Bonsai Band</h3>
+          <p>A premium silicone wristband engraved with your personal mantra — chosen from your journaling journey or customized by you.</p>
+          <ul class="band-features">
+            <li>Premium medical-grade silicone</li>
+            <li>Custom engraved with your mantra</li>
+            <li>8 colors to match your style</li>
+            <li>Sizes S, M, L for the perfect fit</li>
+            <li>Ships free within the US</li>
+          </ul>
+          <div class="band-price">Coming Soon <span>— Pricing TBA</span></div>
+          <a href="mailto:bonsaibands@gmail.com?subject=Bonsai%20Band%20Interest&body=Hi!%20I'm%20interested%20in%20ordering%20a%20Bonsai%20Band.%20Please%20let%20me%20know%20when%20they're%20available!" class="btn-sage">
+            Get Notified When Available
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <h2>Why I built this.</h2>
+    <div class="about-content">
+      <p>
+        In college, I was carrying a lot. School, baseball, relationships, and the weight of my own thoughts all at once. If you saw me, you would think I was completely fine. I smiled, I showed up, I competed. But underneath all of that, I was slowly sinking into a place I didn't know how to get out of.
+      </p>
+      <p>
+        I never really thought about mental health until it found me. I learned what it felt like to wake up heavy, to put on a brave face every single morning, and to wonder why nothing on the other side of any situation ever looked green.
+      </p>
+      <p>
+        If I could sit across from anyone going through something like that, I'd say this: trust in the plan our Creator has for you. Talk to the people around you. And in the moments where your mind is just too full — write it down. Give yourself the space to understand why you think and feel the way you do.
+      </p>
+      <p>
+        That's where MyBons.ai came from. I started pouring my thoughts into ChatGPT, but it never really felt like mine. So I spent countless hours building something that could. Something personal. Something that helps you discover your own mind, at your own pace.
+      </p>
+      <p class="signoff">This is for you. It's built on culture, toughness, strength, and love.</p>
+      <p class="founder-name">— Joey Chitla</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Start your journey.</h2>
+    <p>Free to download. Your first 3 entries every week are on us. Upgrade anytime for unlimited access.</p>
+    <a href="https://apps.apple.com/app/mybonsai/id6758892243" class="btn-primary">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Download MyBons.ai
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <img src="assets/logo.png" alt="MyBons.ai" style="width:28px;height:28px;border-radius:6px;">
+          MyBons.ai
+        </a>
+        <p>A personal journaling app with AI-powered reflections and a growing bonsai garden. See yourself clearly.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="https://apps.apple.com/app/mybonsai/id6758892243">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:jtchitla@mybonsaijournal.com">Support</a></li>
+          <li><a href="mailto:bonsaibands@gmail.com">Band Orders</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MyBons.ai. All rights reserved.</span>
+      <span>Made with care by Joey Chitla</span>
+    </div>
+  </footer>
+
+  <script>
+    // Color swatch interaction
+    document.querySelectorAll('.color-swatch').forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+      });
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links')?.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

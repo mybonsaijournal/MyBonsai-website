@@ -621,9 +621,9 @@ function Footer() {
 
           {/* Links */}
           <div className="flex items-center gap-6 text-sm text-charcoal-muted">
-            <a href="#" className="hover:text-charcoal transition-colors">Privacy</a>
-            <a href="#" className="hover:text-charcoal transition-colors">Terms</a>
-            <a href="#" className="hover:text-charcoal transition-colors">Support</a>
+            <a href="/privacy-policy" className="hover:text-charcoal transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" className="hover:text-charcoal transition-colors">Terms of Service</a>
+            <a href="mailto:jtchitla@mybonsaijournal.com" className="hover:text-charcoal transition-colors">Support</a>
           </div>
 
           {/* Socials */}
@@ -777,7 +777,7 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="mb-6">
-                <span className="font-display text-4xl font-medium text-charcoal">$4.99</span>
+                <span className="font-display text-4xl font-medium text-charcoal">$2.99</span>
                 <span className="text-charcoal-muted">/month</span>
               </div>
               <ul className="space-y-3 mb-8">
