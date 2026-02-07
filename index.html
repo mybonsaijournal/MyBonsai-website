@@ -96,6 +96,12 @@
       <h2>Wear your words.</h2>
       <p>Choose a mantra that means something to you. We'll engrave it on a premium silicone wristband — a physical reminder of the mental work you're doing.</p>
       
+      <!-- Mantra banner (shown when user comes from the app with a mantra) -->
+      <div id="mantra-banner" style="display:none; text-align:center; margin-bottom:32px; padding:24px; background:var(--sage-muted); border-radius:var(--radius-lg);">
+        <p style="font-size:13px; text-transform:uppercase; letter-spacing:1px; color:var(--sage); font-weight:600; margin-bottom:8px;">Your Selected Mantra</p>
+        <p id="mantra-text" style="font-size:24px; font-weight:700; color:var(--ink); letter-spacing:0.5px;"></p>
+      </div>
+
       <div class="band-showcase">
         <div class="band-visual">
           <img src="assets/wristband-preview.png" alt="Bonsai wristband preview" style="max-width: 360px; border-radius: 16px;">
@@ -121,7 +127,7 @@
             <li>Ships free within the US</li>
           </ul>
           <div class="band-price">Coming Soon <span>— Pricing TBA</span></div>
-          <a href="mailto:bonsaibands@gmail.com?subject=Bonsai%20Band%20Interest&body=Hi!%20I'm%20interested%20in%20ordering%20a%20Bonsai%20Band.%20Please%20let%20me%20know%20when%20they're%20available!" class="btn-sage">
+          <a id="order-btn" href="mailto:bonsaibands@gmail.com?subject=Bonsai%20Band%20Interest&body=Hi!%20I'm%20interested%20in%20ordering%20a%20Bonsai%20Band.%20Please%20let%20me%20know%20when%20they're%20available!" class="btn-sage">
             Get Notified When Available
           </a>
         </div>
@@ -214,6 +220,37 @@
         document.querySelector('.nav-links')?.classList.remove('open');
       });
     });
+
+    // Handle mantra passed from the app via URL parameter
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const mantra = params.get('mantra');
+      if (mantra) {
+        // Show the mantra banner
+        const banner = document.getElementById('mantra-banner');
+        const mantraText = document.getElementById('mantra-text');
+        if (banner && mantraText) {
+          mantraText.textContent = mantra;
+          banner.style.display = 'block';
+        }
+        // Update the order email button with the mantra
+        const orderBtn = document.getElementById('order-btn');
+        if (orderBtn) {
+          const subject = encodeURIComponent('Bonsai Band Order — Mantra: ' + mantra);
+          const body = encodeURIComponent(
+            'Hi! I\'d like to order a Bonsai Band.\n\n' +
+            'My Mantra: ' + mantra + '\n' +
+            'Color: \n' +
+            'Size (S/M/L): \n' +
+            'Name: \n' +
+            'Shipping Address: \n\n' +
+            'Thanks!'
+          );
+          orderBtn.href = 'mailto:bonsaibands@gmail.com?subject=' + subject + '&body=' + body;
+          orderBtn.textContent = 'Order This Band';
+        }
+      }
+    })();
   </script>
 </body>
 </html>
