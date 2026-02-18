@@ -83,25 +83,25 @@ img{max-width:100%;height:auto}
 /* ============================================================================
    ONE-LINER — the pitch in one breath
    ============================================================================ */
-.oneliner{padding:60px 24px 24px;text-align:center}
+.oneliner{padding:48px 24px 16px;text-align:center}
 .oneliner p{max-width:540px;margin:0 auto;font-size:18px;color:var(--ink-light);line-height:1.8}
 .oneliner em{color:var(--sage);font-style:italic}
 
 /* ============================================================================
    POLAROIDS — scattered, no wrapper, just the images
    ============================================================================ */
-.polaroids{padding:24px 24px 48px;overflow:hidden}
+.polaroids{padding:16px 24px 32px;overflow:hidden}
 
 .pol-spread{
   position:relative;
   max-width:740px;
-  height:360px;
+  height:290px;
   margin:0 auto;
 }
 
 .pol{
   position:absolute;
-  height:180px;
+  height:170px;
   width:auto;
   filter:drop-shadow(0 6px 16px rgba(0,0,0,.12));
   transition:transform .4s ease,filter .4s ease;
@@ -110,18 +110,18 @@ img{max-width:100%;height:auto}
 
 .pol:hover{z-index:10!important;filter:drop-shadow(0 12px 32px rgba(0,0,0,.2))}
 
-.p1{top:50px;left:3%;transform:rotate(-8deg);z-index:2}
+.p1{top:30px;left:3%;transform:rotate(-8deg);z-index:2}
 .p1:hover{transform:rotate(-8deg) scale(1.06)}
 .p2{top:0;left:50%;transform:translateX(-50%) rotate(2deg);z-index:5}
 .p2:hover{transform:translateX(-50%) rotate(2deg) scale(1.06)}
-.p3{top:50px;right:3%;transform:rotate(6deg);z-index:3}
+.p3{top:30px;right:3%;transform:rotate(6deg);z-index:3}
 .p3:hover{transform:rotate(6deg) scale(1.06)}
-.p4{top:190px;left:14%;transform:rotate(4deg);z-index:1}
+.p4{top:130px;left:14%;transform:rotate(4deg);z-index:1}
 .p4:hover{transform:rotate(4deg) scale(1.06)}
-.p5{top:180px;right:12%;transform:rotate(-5deg);z-index:1}
+.p5{top:125px;right:12%;transform:rotate(-5deg);z-index:1}
 .p5:hover{transform:rotate(-5deg) scale(1.06)}
 
-.pol-caption{text-align:center;margin-top:16px;font-size:15px;color:var(--ink-muted);font-weight:500}
+.pol-caption{text-align:center;margin-top:12px;font-size:15px;color:var(--ink-muted);font-weight:500}
 
 /* ============================================================================
    BAND
@@ -195,9 +195,9 @@ img{max-width:100%;height:auto}
   .phone-notch{width:80px;height:24px;border-radius:0 0 12px 12px}
   .phone-screen{border-radius:22px}
   .oneliner p{font-size:16px}
-  .pol-spread{height:320px}
-  .pol{height:140px}
-  .p1{top:40px;left:0}.p3{right:0}.p4{top:160px;left:8%}.p5{top:150px;right:6%}
+  .pol-spread{height:260px}
+  .pol{height:130px}
+  .p1{top:25px;left:0}.p3{right:0}.p4{top:115px;left:8%}.p5{top:110px;right:6%}
   .band-wrap{grid-template-columns:1fr}
   .band-text{text-align:left}
   .foot-inner{grid-template-columns:1fr 1fr}
@@ -211,9 +211,9 @@ img{max-width:100%;height:auto}
   .phone-frame{width:220px;border-radius:28px;padding:10px}
   .phone-notch{width:70px;height:20px;top:8px;border-radius:0 0 10px 10px}
   .phone-screen{border-radius:20px}
-  .pol-spread{height:260px}
-  .pol{height:110px}
-  .p1{top:30px}.p4{top:130px;left:4%}.p5{top:120px;right:2%}
+  .pol-spread{height:220px}
+  .pol{height:100px}
+  .p1{top:20px}.p4{top:100px;left:4%}.p5{top:95px;right:2%}
   .pol-caption{font-size:14px}
   .btn-primary,.btn-outline{width:100%;justify-content:center}
   .foot-inner{grid-template-columns:1fr}
